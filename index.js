@@ -2,10 +2,9 @@
  * Discord bot that responds to messages sent by a user.
  * Proof of concept for future Discord bots.
  */
-import dotenv from 'dotenv'
-import { Client, GatewayIntentBits } from 'discord.js'
+require('dotenv').config()
 
-dotenv.config()
+import { Client, GatewayIntentBits } from 'discord.js'
 
 const client = new Client({ 
   intents: [
